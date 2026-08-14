@@ -1,48 +1,61 @@
 <div align="center">
 
-# 🏔️ ChronoPeak
+# ⏱️ Stopwatch
 
-### ⏱️ Time flows. Moments matter.
+### A simple stopwatch with a beautiful interface.
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&size=22&duration=3000&pause=1000&color=7C83FD&center=true&vCenter=true&width=650&lines=Start+your+time.;Capture+every+lap.;Stay+in+the+moment.;Welcome+to+ChronoPeak." />
+<br>
 
-<br><br>
-
-![HTML5](https://img.shields.io/badge/HTML5-FF6B6B?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-4D96FF?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-FFD93D?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 </div>
 
 ---
 
-## 🌄 What is ChronoPeak?
+## ✨ About the Project
 
-**ChronoPeak** is not just another stopwatch.
+**Stopwatch** is a modern and responsive web application designed to make
+time tracking simple and visually appealing.
 
-It is a minimal, visually immersive stopwatch designed around one simple idea:
-
-> **Make every second count.**
-
-Inspired by peaceful mountain landscapes, ChronoPeak combines a
-**glassmorphism interface**, smooth interactions and practical stopwatch
-controls into one clean experience.
+The project combines a **mountain-inspired background**, a soft
+**glassmorphism interface**, and smooth interactions to create a clean
+and relaxing user experience.
 
 ---
 
-## ⏱️ The Experience
+## 🌟 Features
+
+- ▶️ Start the stopwatch
+- ⏸️ Pause the timer
+- 🏁 Record multiple lap times
+- 🔄 Reset the stopwatch
+- 🗑️ Clear lap history
+- 🌙 Dark mode
+- 🏔️ Mountain-themed interface
+- 📱 Responsive design
+- ✨ Modern glassmorphism UI
+
+---
+
+## 🎨 Interface
+
+The design focuses on simplicity and readability while keeping the
+interface visually attractive.
 
 ```text
-        START
-          ↓
-    ┌─────────────┐
-    │  TIME FLOWS │
-    └──────┬──────┘
-           ↓
-        ┌─────┐
-        │ LAP │ ──────→ Capture the moment
-        └─────┘
-           ↓
-        PAUSE
-           ↓
-        RESET
+┌─────────────────────────────────────────────────────────┐
+│  ⏱ Stopwatch                                  ☾         │
+│                                                         │
+│                     00:24:18                 LAP TIMES  │
+│                                                         │
+│             ▶       ⏸       🏁       ↻       Lap 3     │
+│           Start    Pause     Lap    Reset     00:24:18 │
+│                                                         │
+│                                             Lap 2       │
+│                                             00:18:42   │
+│                                                         │
+│                                             Lap 1       │
+│                                             00:10:25   │
+└─────────────────────────────────────────────────────────┘
