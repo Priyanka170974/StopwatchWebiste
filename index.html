@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stopwatch-card">
+
+    <img
+        src="./assets/mountains.png"
+        class="background-image"
+        alt=""
+    >
+
+    
+    <!-- LEFT -->
+    <section class="timer-section">
+
+        <div class="top">
+            <div class="title">
+                <span>⏱</span>
+                <h1>Stopwatch</h1>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">☾</button>
+        </div>
+
+
+        <div class="timer-box">
+
+            <div id="display">00:00:00</div>
+
+            <div class="labels">
+                <span>MIN</span>
+                <span>SEC</span>
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+
+            <button id="startBtn" class="control">
+                <span class="icon start">▶</span>
+                <span>Start</span>
+            </button>
+
+            <button id="pauseBtn" class="control">
+                <span class="icon pause">Ⅱ</span>
+                <span>Pause</span>
+            </button>
+
+            <button id="lapBtn" class="control">
+                <span class="icon lap">⚑</span>
+                <span>Lap</span>
+            </button>
+
+            <button id="resetBtn" class="control">
+                <span class="icon reset">↻</span>
+                <span>Reset</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT -->
+    <section class="laps-section">
+
+        <div class="laps-title">
+
+            <h2>LAP TIMES</h2>
+
+            <button id="clearBtn" class="clear-btn">
+                🗑
+            </button>
+
+        </div>
+
+
+        <div id="lapsList">
+
+            <div class="empty">
+                No lap times yet
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

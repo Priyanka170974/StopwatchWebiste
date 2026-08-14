@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9d82d7,
+            #d99bca,
+            #f39bc0
+        );
+
+    color: white;
+}
+
+
+/* =================================
+   MAIN CARD
+================================= */
+
+.stopwatch-card {
+
+    width: min(1250px, 95vw);
+
+    height: 680px;
+
+    display: grid;
+
+    grid-template-columns: 58% 42%;
+
+    overflow: hidden;
+
+    border-radius: 38px;
+
+    position: relative;
+
+    background-image:
+
+        linear-gradient(
+            rgba(50, 35, 85, 0.12),
+            rgba(20, 15, 50, 0.35)
+        ),
+
+        url("assets/mountains.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.45);
+
+    box-shadow:
+        0 30px 80px
+        rgba(40,20,70,0.45);
+}
+
+
+/* =================================
+   LEFT SECTION
+================================= */
+
+.timer-section {
+
+    padding: 48px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background:
+        rgba(30,20,60,0.08);
+}
+
+
+/* =================================
+   TOP
+================================= */
+
+.top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.title span {
+
+    font-size: 32px;
+}
+
+
+.title h1 {
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+.theme-btn {
+
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.35);
+
+    background:
+        rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+
+.theme-btn:hover {
+
+    transform:
+        rotate(20deg)
+        scale(1.08);
+
+    background:
+        rgba(255,255,255,0.22);
+}
+
+
+/* =================================
+   TIMER
+================================= */
+
+.timer-box {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+#display {
+
+    font-size:
+        clamp(70px, 8vw, 120px);
+
+    font-weight: 300;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 5px 25px
+        rgba(0,0,0,0.4);
+}
+
+
+.labels {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 160px;
+
+    margin-top: -8px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.85;
+}
+
+
+/* =================================
+   CONTROLS
+================================= */
+
+.controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.control {
+
+    width: 110px;
+
+    height: 115px;
+
+    border-radius: 22px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    background:
+        rgba(30,25,60,0.42);
+
+    backdrop-filter: blur(14px);
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: 17px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.22);
+
+    transition: 0.25s;
+}
+
+
+.control:hover {
+
+    transform:
+        translateY(-7px);
+
+    background:
+        rgba(255,255,255,0.17);
+
+    box-shadow:
+        0 18px 35px
+        rgba(0,0,0,0.3);
+}
+
+
+.control:active {
+
+    transform: scale(0.95);
+}
+
+
+.icon {
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.start {
+    color: #8cff80;
+}
+
+.pause {
+    color: #ffc64d;
+}
+
+.lap {
+    color: #73b5ff;
+}
+
+.reset {
+    color: #ff7185;
+}
+
+
+/* =================================
+   RIGHT SECTION
+================================= */
+
+.laps-section {
+
+    padding: 48px;
+
+    background:
+        rgba(55,40,85,0.42);
+
+    border-left:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(15px);
+}
+
+
+/* =================================
+   LAP HEADER
+================================= */
+
+.laps-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+
+.laps-title h2 {
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+}
+
+
+.clear-btn {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    background:
+        rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.clear-btn:hover {
+
+    background:
+        rgba(255,80,100,0.3);
+
+    transform: scale(1.08);
+}
+
+
+/* =================================
+   LAP LIST
+================================= */
+
+#lapsList {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    max-height: 520px;
+
+    overflow-y: auto;
+}
+
+
+.lap-item {
+
+    min-height: 82px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.12);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.25s;
+}
+
+
+.lap-item:hover {
+
+    transform: translateX(6px);
+
+    background:
+        rgba(255,255,255,0.19);
+}
+
+
+.lap-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 18px;
+}
+
+
+.lap-dot {
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+}
+
+
+.lap-time {
+
+    font-size: 19px;
+
+    letter-spacing: 1px;
+
+    font-weight: 500;
+}
+
+
+.empty {
+
+    text-align: center;
+
+    padding: 90px 10px;
+
+    opacity: 0.65;
+}
+
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+#lapsList::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+
+#lapsList::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(255,255,255,0.35);
+
+    border-radius: 10px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 950px) {
+
+    .stopwatch-card {
+    width: min(1250px, 95vw);
+    height: 680px;
+
+    display: grid;
+    grid-template-columns: 58% 42%;
+
+    overflow: hidden;
+    border-radius: 38px;
+
+    position: relative;
+
+    background-image: url("./assets/mountains.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    box-shadow:
+        0 30px 80px rgba(40, 20, 70, 0.45);
+}
+
+  .timer-section {
+    background: rgba(30,20,60,0.08);
+}
+   .laps-section {
+    background: rgba(40, 25, 65, 0.30);
+}
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .timer-section,
+    .laps-section {
+        padding: 25px;
+    }
+
+    #display {
+        font-size: 55px;
+    }
+
+    .labels {
+        gap: 90px;
+    }
+
+    .control {
+        width: 75px;
+        height: 90px;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+}
+/* =====================================
+   MOUNTAIN BACKGROUND
+===================================== */
+
+.stopwatch-card {
+    position: relative;
+    overflow: hidden;
+
+    background: transparent !important;
+}
+
+
+/* Actual image */
+
+.background-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* Content image ke upar */
+
+.timer-section,
+.laps-section {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Left side transparent */
+
+.timer-section {
+    background: rgba(30, 20, 60, 0.08) !important;
+}
+
+
+/* Right side halka glass */
+
+.laps-section {
+    background: rgba(35, 25, 65, 0.35) !important;
+
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+.theme-btn {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.25);
+}
+
+
+
+
+
+/* ================================
+   DARK MODE
+================================ */
+
+body.dark-mode {
+    background: #090b14;
+}
+
+
+/* Dark overlay over mountain */
+
+body.dark-mode .stopwatch-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* Keep everything above overlay */
+
+body.dark-mode .timer-section,
+body.dark-mode .laps-section {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+body.dark-mode {
+    background: #080812;
+}
+
+body.dark-mode .stopwatch-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
+}
+
+body.dark-mode .timer-section,
+body.dark-mode .laps-section {
+    position: relative;
+    z-index: 2;
+}
+
+body.dark-mode .laps-section {
+    background: rgba(5, 5, 15, 0.65) !important;
+}
+
+.theme-btn {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.4);
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+/* ================================
+   MOON BUTTON
+================================ */
+
+.theme-btn {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.4);
+
+    background:
+        rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+
+.theme-btn:hover {
+
+    transform: scale(1.1);
+
+    background:
+        rgba(255,255,255,0.25);
+}
