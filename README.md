@@ -148,7 +148,7 @@ Stopwatch/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Stopwatch.git
+https://github.com/Priyanka170974/StopwatchWebiste.git
 ```
 
 ### 2. Open the Project
