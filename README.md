@@ -24,6 +24,16 @@
 
 ---
 
+## 📸 Project Preview
+
+<div align="center">
+
+<img src="assets/stopwatch-preview.png" alt="Stopwatch Project Preview" width="850">
+
+</div>
+
+---
+
 ## 📌 About the Project
 
 **Stopwatch** is a modern and responsive web application built using
