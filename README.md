@@ -135,3 +135,47 @@ Stopwatch/
 ├── style.css
 ├── script.js
 └── README.md
+---
+
+## 👩‍💻 Developer
+
+<div align="center">
+
+### Priyanka Jain
+
+**Computer Science & Artificial Intelligence Student**
+
+Passionate about building creative projects, learning new technologies,
+and improving my problem-solving and development skills.
+
+<br>
+
+### 🛠️ Tech Interests
+
+`Java` • `C` • `Python` • `JavaScript` • `HTML` • `CSS` • `DSA` • `AI`
+
+<br>
+
+### 🌐 Connect With Me
+
+<a href="https://github.com/YOUR-USERNAME">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
+
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+### ⏱️ Built with HTML • CSS • JavaScript
+
+**Designed & Developed with ❤️ by Priyanka Jain**
+
+⭐ If you like this project, don't forget to star the repository!
+
+</div>
