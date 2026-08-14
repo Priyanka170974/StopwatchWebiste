@@ -2,7 +2,7 @@
 
 # ⏱️ Stopwatch
 
-### A modern, responsive stopwatch built with HTML, CSS & JavaScript
+### A Modern, Responsive Stopwatch Built with HTML, CSS & JavaScript
 
 <br>
 
@@ -28,7 +28,11 @@
 
 <div align="center">
 
-<img src="assets/stopwatch-preview.png" alt="Stopwatch Project Preview" width="850">
+<img src="assets/stopwatch-preview.png" alt="Stopwatch Website Preview" width="850">
+
+<br><br>
+
+**A clean and modern stopwatch interface with mountain-themed visuals and glassmorphism design.**
 
 </div>
 
