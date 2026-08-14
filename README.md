@@ -151,11 +151,15 @@ Stopwatch/
 https://github.com/Priyanka170974/StopwatchWebiste.git
 ```
 
-### 2. Live demo
-```bash
- https://priyanka170974.github.io/StopwatchWebiste/
-```
+## 🚀 Live Demo
 
+<div align="center">
+
+<a href="https://priyanka170974.github.io/StopwatchWebiste/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐%20Open%20Live%20Demo-Click%20Here-00C2FF?style=for-the-badge" alt="Live Demo">
+</a>
+
+</div>
 Open the project in **VS Code**, **IntelliJ IDEA**, or any code editor.
 
 ### 3. Run the Application
