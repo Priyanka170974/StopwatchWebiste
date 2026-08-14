@@ -18,56 +18,51 @@
 
 ---
 
-## 📌 About
+## 📌 About the Project
 
-This project is a **modern Stopwatch Web Application** created with
+**Stopwatch** is a modern and responsive web application built using
 **HTML, CSS and JavaScript**.
 
-The application provides an easy way to measure time with essential
+It provides a simple and interactive way to measure time with essential
 stopwatch controls such as **Start, Pause, Lap and Reset**.
 
-It also features a beautiful **mountain-themed background**, a
-**glassmorphism-inspired interface**, responsive layouts and a
-**Dark Mode** for a more comfortable viewing experience.
+The project features a beautiful **mountain-themed background**, a
+glassmorphism-inspired interface, smooth interactions and a **Dark Mode**
+for a comfortable viewing experience.
 
-The goal of this project was to combine **functionality with a clean
-and visually appealing user interface**.
+The main goal of this project is to combine **useful functionality with
+a clean and visually appealing user interface**.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
 ### ⏱️ Stopwatch Controls
 
-- **Start** — Starts the stopwatch and begins tracking time.
-- **Pause** — Pauses the stopwatch without losing the current time.
-- **Lap** — Records the current time as an individual lap.
-- **Reset** — Resets the stopwatch and clears the recorded laps.
-
-### 🏁 Lap Tracking
-
-The Lap feature allows users to record multiple lap times while the
-stopwatch continues running.
-
-Each lap is displayed separately with its corresponding time, making
-it easy to keep track of different intervals.
+- ▶️ **Start** — Start the stopwatch and begin tracking time.
+- ⏸️ **Pause** — Pause the stopwatch without losing the current time.
+- 🏁 **Lap** — Record the current stopwatch time.
+- 🔄 **Reset** — Reset the stopwatch and lap history.
+- 🗑️ **Clear Laps** — Remove all recorded lap times.
 
 ### 🌙 Dark Mode
 
-Switch between a light and dark visual experience using the theme
-toggle button.
+Switch between the normal and dark visual experience using the
+moon button in the top-right corner.
 
-The dark theme changes the surrounding interface while maintaining
-the readability of the stopwatch and lap information.
+### 🏁 Lap Tracking
 
-### 🏔️ Mountain-Themed UI
+Record multiple laps while the stopwatch continues running.
+Each lap is displayed separately with its recorded time.
 
-The application uses a scenic mountain background combined with
-transparent panels to create a modern and relaxing visual experience.
+### 🏔️ Mountain-Themed Interface
+
+A scenic mountain background combined with transparent glass-style
+panels creates a clean and relaxing visual experience.
 
 ### 📱 Responsive Design
 
-The interface is designed to work across:
+The interface adapts to different screen sizes including:
 
 - 💻 Desktop
 - 💻 Laptop
@@ -78,48 +73,57 @@ The interface is designed to work across:
 
 ## 🎨 Design
 
-The UI combines:
+The project uses a modern visual style based on:
 
-- Glassmorphism
-- Transparent panels
-- Rounded cards
-- Soft shadows
-- Scenic background
-- Minimal typography
-- Smooth hover effects
+- 💎 Glassmorphism
+- 🌄 Scenic mountain background
+- 🔲 Rounded cards
+- ✨ Soft shadows
+- 🪟 Transparent panels
+- 🎯 Minimal and clean layout
+- 🖱️ Smooth hover interactions
 
-The design keeps the stopwatch easy to use while giving it a modern
-and polished appearance.
+The design focuses on keeping the stopwatch **simple, readable and easy
+to use** while maintaining a polished appearance.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Usage |
-|------------|-------|
-| **HTML5** | Page structure and UI elements |
-| **CSS3** | Styling, layout, responsive design and effects |
+| Technology | Purpose |
+|------------|---------|
+| **HTML5** | Structure and content |
+| **CSS3** | Styling, layout and responsive design |
 | **JavaScript** | Stopwatch logic and interactions |
 
 ---
 
 ## ⚙️ How It Works
 
-The stopwatch uses JavaScript's timer functionality to continuously
+The stopwatch uses JavaScript timer functionality to continuously
 update the displayed time.
 
-The basic flow is:
+### Timer Flow
 
-**Start → Timer runs → Lap records time → Pause → Reset**
+```text
+Start
+  ↓
+Timer Running
+  ↓
+Lap ───→ Save Current Time
+  ↓
+Pause
+  ↓
+Reset
+```
 
-The timer keeps track of:
+The timer tracks:
 
 - Minutes
 - Seconds
 - Milliseconds
 
-JavaScript dynamically updates the display while the stopwatch is
-running.
+The display is updated continuously while the stopwatch is running.
 
 ---
 
@@ -135,6 +139,113 @@ Stopwatch/
 ├── style.css
 ├── script.js
 └── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Stopwatch.git
+```
+
+### 2. Open the Project
+
+```bash
+cd Stopwatch
+```
+
+Open the project in **VS Code**, **IntelliJ IDEA**, or any code editor.
+
+### 3. Run the Application
+
+Open:
+
+```text
+index.html
+```
+
+in your web browser.
+
+No frameworks or external dependencies are required.
+
+---
+
+## 💻 How to Use
+
+1. Click **Start** to begin the stopwatch.
+2. Click **Pause** to temporarily stop the timer.
+3. Click **Lap** to record the current time.
+4. Continue recording multiple laps if needed.
+5. Click **Reset** to start a fresh session.
+6. Click **Clear Laps** to remove lap records.
+7. Click the **Moon button** to switch to Dark Mode.
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I practiced and improved my understanding of:
+
+- DOM Manipulation
+- JavaScript Event Listeners
+- `setInterval()`
+- Timer Logic
+- Dynamic HTML Elements
+- CSS Flexbox
+- CSS Grid
+- Responsive Web Design
+- Glassmorphism UI
+- Dark Mode
+- Git & GitHub
+
+---
+
+## 🔮 Future Improvements
+
+Some features that can be added in future versions:
+
+- 💾 Save lap history using Local Storage
+- ⌨️ Keyboard shortcuts
+- 🎨 Multiple background themes
+- 📊 Stopwatch statistics
+- 🔔 Optional sound notifications
+- 📱 Improved mobile experience
+- 🖥️ Fullscreen stopwatch mode
+- 🎨 Custom user themes
+
+---
+
+## 🌱 Project Goals
+
+The main goals of this project were to:
+
+- Build a functional stopwatch from scratch
+- Strengthen JavaScript fundamentals
+- Practice DOM manipulation
+- Improve responsive UI design
+- Learn timer and event-based programming
+- Create a visually attractive frontend project
+- Practice using Git and GitHub
+
+---
+
+## ⭐ Project Highlights
+
+| Feature | Status |
+|---------|--------|
+| Stopwatch | ✅ Completed |
+| Start / Pause | ✅ Completed |
+| Lap Tracking | ✅ Completed |
+| Reset | ✅ Completed |
+| Clear Laps | ✅ Completed |
+| Dark Mode | ✅ Completed |
+| Responsive UI | ✅ Completed |
+| Mountain Background | ✅ Completed |
+| Glassmorphism Design | ✅ Completed |
+
 ---
 
 ## 👩‍💻 Developer
@@ -146,7 +257,7 @@ Stopwatch/
 **Computer Science & Artificial Intelligence Student**
 
 Passionate about building creative projects, learning new technologies,
-and improving my problem-solving and development skills.
+and improving problem-solving and development skills.
 
 <br>
 
@@ -172,10 +283,12 @@ and improving my problem-solving and development skills.
 
 <div align="center">
 
-### ⏱️ Built with HTML • CSS • JavaScript
+### ⏱️ Every Second Counts.
 
 **Designed & Developed with ❤️ by Priyanka Jain**
 
-⭐ If you like this project, don't forget to star the repository!
+<br>
+
+⭐ **If you like this project, consider giving the repository a star!**
 
 </div>
