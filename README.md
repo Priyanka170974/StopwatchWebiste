@@ -151,10 +151,9 @@ Stopwatch/
 https://github.com/Priyanka170974/StopwatchWebiste.git
 ```
 
-### 2. Open the Project
-
+### 2. Live demo
 ```bash
-cd Stopwatch
+ https://priyanka170974.github.io/StopwatchWebiste/
 ```
 
 Open the project in **VS Code**, **IntelliJ IDEA**, or any code editor.
